@@ -60,7 +60,7 @@ class Graph extends Component {
                     renderItem={item => (
                         <List.Item>
                             <List.Item.Meta
-                            title={<a href={item.url}>{item.name + ' - ' +item.employer.name }</a>}
+                            title={<a href={item.alternate_url}>{item.name + ' - ' +item.employer.name }</a>}
                             description={item.salary.from + 'р.'}
                             />
                         </List.Item>

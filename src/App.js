@@ -52,6 +52,17 @@ class App extends Component {
     })
   };
 
+  handleBlank = () => {
+    this.setState({
+      countryId: null,
+      regionId: null,
+      cityId: null,
+      vacancy: null,
+      vacancies: [],
+      isHideSearch: false,
+    })
+  }
+
   handleSubmit = (vacancy) => {
     this.fetchVacancies(vacancy);
     this.setState({
@@ -65,7 +76,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img onClick={this.handleBlank} src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">HH salary monitoring</h1>
         </header>
         {

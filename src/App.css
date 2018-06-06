@@ -5,6 +5,11 @@
 .App-logo {
   animation: App-logo-spin infinite 10s linear;
   height: 80px;
+  cursor: pointer;
+}
+
+.App-logo:hover {
+  opacity: 0.8;
 }
 
 .App-header {
